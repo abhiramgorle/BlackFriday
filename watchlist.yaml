@@ -1,0 +1,43 @@
+# Items to watch. Edit this file, commit, push. The next run picks it up.
+#
+# name       : label shown in the alert
+# match      : ALL of these words must appear in the deal title (case-insensitive)
+# exclude    : if ANY of these words appear in the title, the deal is skipped
+# max_price  : alert only when price <= this (omit to alert on every matching deal)
+# min_price  : skip anything cheaper (kills accessories, books, spare parts)
+# urls       : product pages to check directly (price read from the page's JSON-LD)
+#   url      : page address
+#   variant  : optional; pick the variant whose name contains this text
+#
+# Sources searched per item: Slickdeals (covers Amazon, Walmart, Best Buy, Target,
+# Costco, Newegg, B&H ...), Amazon search, Walmart search, plus any direct urls.
+
+settings:
+  sources:
+    slickdeals: true
+    amazon: true
+    walmart: true
+  # Seconds to pause between web requests. Keep >= 1 to be polite and avoid blocks.
+  request_delay: 1.5
+
+items:
+  - name: Bambu Lab P2S Combo
+    match: [bambu, p2s, combo]
+    exclude: [restored, refurb, "open box", used, "for bambu", "compatible with", filament, hotend, nozzle, plate, kit]
+    min_price: 300
+    max_price: 800
+    urls:
+      - url: https://us.store.bambulab.com/products/p2s
+        variant: Combo
+
+  - name: Ninja Creami
+    match: [ninja, creami]
+    exclude: [restored, refurb, "open box", replacement, "extra pint", cookbook, recipe, "for ninja", "compatible with"]
+    min_price: 80
+    max_price: 170
+
+  - name: Ninja Creami Deluxe
+    match: [ninja, creami, deluxe]
+    exclude: [restored, refurb, "open box", replacement, "extra pint", cookbook, recipe, "for ninja", "compatible with"]
+    min_price: 80
+    max_price: 200
