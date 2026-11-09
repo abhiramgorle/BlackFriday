@@ -41,3 +41,15 @@ items:
     exclude: [restored, refurb, "open box", replacement, "extra pint", cookbook, recipe, "for ninja", "compatible with"]
     min_price: 80
     max_price: 200
+
+  - name: SanDisk Extreme PRO 256GB
+    match: [sandisk, extreme, pro, 256]
+    exclude: [restored, refurb, "open box", 128gb, 512gb, 1tb, 2tb, reader, hub, "for sandisk", "compatible with"]
+    min_price: 15
+    max_price: 35
+
+  - name: Galaxy Tab S12 Ultra 512GB
+    match: [galaxy, tab, s12, ultra, 512]
+    exclude: [restored, refurb, "open box", case, cover, skin, stylus, keyboard, charger, "for galaxy", "compatible with"]
+    min_price: 600
+    max_price: 1000
