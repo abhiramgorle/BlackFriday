@@ -1,1 +1,19 @@
-{"alerted": {}}
+{
+ "alerted": {
+  "page:https://us.store.bambulab.com/products/p2s#664977091405410311": {
+   "price": 649.0,
+   "title": "Bambu Lab P2S - P2S Combo",
+   "ts": 1794182807
+  },
+  "walmart:17594113552": {
+   "price": 179.95,
+   "title": "Ninja NC501 CREAMi Deluxe 11-in-1 XL Ice Cream Maker, Bundle with Deco Essentials 6 Pack of Pints and Lids, Silver ,",
+   "ts": 1794182807
+  },
+  "walmart:19268709480": {
+   "price": 149.0,
+   "title": "Ninja CREAMi Ice Cream Maker, for Mix-ins, Milkshakes, Sorbet, Dairy-Free, 5 One-Touch Programs, (2) 16-Oz Pint Containe",
+   "ts": 1794182807
+  }
+ }
+}
